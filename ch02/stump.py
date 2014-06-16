@@ -19,6 +19,8 @@ virginica = (labels == 'virginica')
 
 
 best_acc = -1.0
+best_fi = -1.0
+best_t = -1.0
 for fi in range(features.shape[1]):
     thresh = features[:, fi].copy()
     thresh.sort()
